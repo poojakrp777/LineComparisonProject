@@ -50,20 +50,19 @@ namespace LineComparisonProject
             double Length2 = Math.Sqrt((Math.Pow((X4 - X3), 2) + Math.Pow((Y4 - Y3), 2)));
             Console.WriteLine("Length of the line is :" + Length2);
 
-            //using sequence selection to check lines are equal or not 
+            //using sequence selection to check lines are equal or greater than or lesser than other lines
             if (Length1 == Length2)
             {
                 Console.WriteLine("BOTH LINES ARE EQUAL");
             }
+            else if (Length1 > Length2)
+            {
+                Console.WriteLine("Length1 IS GREATER THAN Length2");
+            }
             else
             {
-                Console.WriteLine("BOTH LINES ARE NOT EQUAL");
+                Console.WriteLine("Length1 IS LESS THAN Length2");
             }
-
-            //using double to get square root value in double decimal points
-
-            double length1 = Math.Sqrt((Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2)));
-            Console.WriteLine("Length of the line is :" + length1);
 
             Console.ReadLine();
         }
